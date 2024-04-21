@@ -11,7 +11,7 @@ import time
 
 if __name__ == "__main__":
     um982_driver = UM982Driver()                # 实例化驱动对象
-    ser = serial.Serial("/dev/rtk", 921600) # 打开串口
+    ser = serial.Serial("/dev/ACM0", 921600) # 打开串口
     while True:
         msg = str(ser.read_all(),'utf-8')       # 读取UM982的输出
         um982_driver.decode(msg)                # 解码

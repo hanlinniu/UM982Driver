@@ -34,6 +34,16 @@ GPHPR com2 0.05
 BESTNAVA com2 0.05
 ```
 
+Before you test demo.py
+```
+pip install pyserial
+sudo chmod 666 /dev/ttyACM0
+git clone https://github.com/hanlinniu/UM982Driver.git
+cd /UM982Driver/demo/simple_demo
+python3 demo.py
+
+```
+
 ## Examples
 [demo.py](demo/simple_demo/demo.py)
 ```
